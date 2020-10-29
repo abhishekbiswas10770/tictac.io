@@ -1,0 +1,91 @@
+body {
+    font-family: "Arial", sans-serif;
+  }
+  
+  html {
+    background: url(back.gif) no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Roboto", 50 ;
+    text-decoration: underline;
+  }
+  
+  section {
+    text-align: center;
+  }
+  
+  .game--container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+    color: white;
+  }
+  
+  .cell {
+    font-family: 'Roboto', cursive;
+    width: 100px;
+    height: 100px;
+    -webkit-box-shadow: 0 0 0 1px #333333;
+            box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: url(pencil.png), auto;
+    line-height: 100px;
+    font-size: 60px;
+  }
+  
+  .game--restart {
+    background: #f7e96a;
+    border: none;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10%;
+    -webkit-box-shadow: 4px 8px white;
+            box-shadow: 4px 8px white;
+    -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+    transition: -webkit-box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  }
+  
+  .game--restart:hover {
+    -webkit-box-shadow: 8px 16px #888888;
+            box-shadow: 8px 16px #888888;
+    cursor: pointer;
+    background: #eeff00c7;
+  }
+  
+  .game--status {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    background-size: 400% 100%;
+  }
+  
+  @-webkit-keyframes rainbow_animation {
+    0%,
+    100% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+  }
+  
+  @keyframes rainbow_animation {
+    0%,
+    100% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+  }
+  /*# sourceMappingURL=index.css.map */
+  
